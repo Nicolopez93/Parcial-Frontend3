@@ -10,7 +10,7 @@ const Formulario = () => {
 
     const handleSubmit = (event) =>{
         event.preventDefault();
-        if (nombre.trim().length > 3 &&  nombre.trim().startsWith('') && apellido.length >= 6 && edad >= 18) {
+        if (nombre.trim().length >= 3 &&  nombre.trim().startsWith('') && apellido.length >= 6 && edad >= 18) {
             setShow (true)
         }else{
             setError (true)
